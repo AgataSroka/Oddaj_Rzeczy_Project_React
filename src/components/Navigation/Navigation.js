@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../../scss/Navigation/Navigation.scss';
 import {NavLink} from "react-router-dom";
 import '../../scss/settings/_colors.scss';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 class Navigation extends Component{
@@ -28,10 +29,10 @@ class Navigation extends Component{
                 </ul>
                 <ul className="menu">
                     <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu} exact to={"/Start"}>Start</NavLink></li>
-                    <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu} to={"/O_co_chodzi"}>O co chodzi?</NavLink></li>
-                    <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu} to={"/O_nas"}>O Nas</NavLink></li>
-                    <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu}  to={"/Fundacja_i_organizacje"}>Fundacja i organizacje</NavLink></li>
-                    <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu}  to={"/Kontakt"}>Kontakt</NavLink></li>
+                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to='SimpleSteps' spy={true} smooth={true} duration={500}>O co chodzi?</Link></li>
+                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true} duration={500}>O Nas</Link></li>
+                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu}  to="WhoWeHelp" spy={true} smooth={true} duration={500}>Fundacja i organizacje</Link></li>
+                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu}  to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link></li>
                 </ul>
             </nav>
         )

@@ -20,8 +20,8 @@ render(){
             <WhoWeHelp/>
             <Contact/>
         </>
-
     )
 }
 }
 export default Home
+

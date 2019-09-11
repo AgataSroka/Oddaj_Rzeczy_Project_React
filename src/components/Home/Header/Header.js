@@ -4,7 +4,13 @@ import '../../../scss/Home/Header/Header.scss';
 class Header extends Component{
     render(){
         return(
-            <div className='container header'>lorem ipsum</div>
+            <>
+            <div className='photo'>
+                <p>Zacznij pomagać! </p>
+                <p> Oddaj niechciane rzeczy w zaufane ręce </p>
+            </div>
+
+                </>
         )
     }
 }

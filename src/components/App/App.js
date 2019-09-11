@@ -12,6 +12,8 @@ class App extends Component{
                 <Navigation/>
                 <Switch>
                     <Route exact path={'/'} component={Home}/>
+                    <Route exact path={'/logowanie'}/>
+                    <Route exact path={'/rejestracja'}/>
                 </Switch>
             </HashRouter>
         );

@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 
 class ThreeColumns extends Component{
     render(){
-        return null
+        return (
+            <div className='header'>lorem ipsum</div>
+        )
 
     }
 }
