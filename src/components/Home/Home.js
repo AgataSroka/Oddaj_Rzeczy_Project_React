@@ -14,9 +14,9 @@ render(){
     return(
         <>
             <Header/>
-            <AboutUs/>
-            <SimpleSteps/>
             <ThreeColumns/>
+            <SimpleSteps/>
+            <AboutUs/>
             <WhoWeHelp/>
             <Contact/>
         </>
