@@ -1,16 +1,29 @@
+@import '../../../scss/settings/colors.scss';
+
+
 .simple_steps_1 {
   width: 100%;
-  height: 500px;
+  height: 550px;
   margin: auto;
   text-align: center;
+  padding-top: 20px;
 
   .main_text {
     text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3C3C3C;
+    p{
+      color:#3C3C3C;
+      font-size: 26px;
+      font-weight: lighter;
+    }
   }
 .background {
-  height: 200px;
-  background-color: silver;
+  height: 270px;
+  background-color: map_get($colors, grey);
   width: 100%;
+  margin-top: 20px;
 
   .simple_steps_2 {
     display: flex;
@@ -18,23 +31,47 @@
     text-align: center;
     width: 70%;
     height: 200px;
-    background-color: silver;
+    background-color: map_get($colors, grey);
+
 
     .one_step {
-      width: 200px;
+      width: 120px;
       height: 100%;
       display: block;
       text-align: center;
       margin: auto;
+      padding-top: 50px;
+      h3{
+        font-size: 14px;
+        color:#3C3C3C ;
+      }
+      p{
+        font-size: 13px;
+        color:#3C3C3C ;
+      }
+
+      hr{
+        width: 50px;
+        border-bottom: 2px solid #3C3C3C;
+        color:#3C3C3C ;
+      }
     }
   }
 
   button {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #3C3C3C;
     height: 90px;
     width: 220px;
     background-color: white;
+    margin-top: 100px;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      color:#3C3C3C ;
+      font-size: 25px;
+      font-family: 'Open Sans', sans-serif;
+    }
   }
 }
 }

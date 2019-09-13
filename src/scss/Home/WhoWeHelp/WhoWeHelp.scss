@@ -1,5 +1,46 @@
-.header{
+.who_we_help{
   height: 500px;
-  margin-bottom: 20px;
-  border: 2px solid black;
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  color: #3C3C3C;
+
+.main_help {
+
+  display: block;
+  margin: 50px;
+
+  h3{
+    font-size: 28px;
+    font-weight: lighter;
+  }
+
+  .buttons {
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+
+
+    button {
+      width: 200px;
+      height: 70px;
+      font-size: 18px;
+      font-weight: lighter;
+      border: 1px solid #3C3C3C;
+      background-color: white;
+      margin-right: 50px;
+      color:#3C3C3C;
+    }
+  }
+}
+  .help_background{
+    width: 60%;
+    margin: auto;
+    padding-top: 40px;
+
+  }
+
 }
