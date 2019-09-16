@@ -9,8 +9,8 @@ class AboutUs extends Component{
             <div className='about_us' name="AboutUs">
                 <div className='about_text'>
                     <div className='text_2'>
-                    <h3>O nas</h3>
-                    <img src={decoration} style={{width: '200px'}}/>
+                    <h2>O nas</h2>
+                    <img src={decoration} style={{width: '180px'}}/>
                     <p> Nori grape silver beet broccoli kombu beet greans fava bean potato quandong celery .
                         Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
                     </p>

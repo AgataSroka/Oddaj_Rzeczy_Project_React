@@ -1,20 +1,17 @@
 .who_we_help{
-  height: 500px;
+  height: 750px;
   width: 70%;
   text-align: center;
   display: block;
   margin: auto;
-  padding-top: 50px;
   color: #3C3C3C;
 
 .main_help {
-
   display: block;
   margin: 50px;
 
-  h3{
-    font-size: 28px;
-    font-weight: lighter;
+  h2{
+    font-size: 26px;
   }
 
   .buttons {
@@ -23,24 +20,44 @@
     text-align: center;
     display: flex;
 
-
     button {
       width: 200px;
       height: 70px;
       font-size: 18px;
       font-weight: lighter;
-      border: 1px solid #3C3C3C;
       background-color: white;
       margin-right: 50px;
-      color:#3C3C3C;
+      border:none;
+    }
+    .border{
+      border: 1px solid black;
     }
   }
 }
   .help_background{
-    width: 60%;
+    width: 55%;
     margin: auto;
     padding-top: 40px;
+    .help_text{
+      font-weight: bolder;
+    }
 
   }
 
+}
+
+.main_section {
+  display: block;
+  text-align: left;
+
+  .flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .right_section {
+      display: inline-flex;
+      align-content: flex-end;
+    }
+  }
 }

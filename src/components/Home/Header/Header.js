@@ -17,10 +17,10 @@ class Header extends Component{
                     <div className='main_text'>
                         <Navigation/>
                         <div className='main_box'>
-                            <p> Zacznij pomagać! <br/>
+                            <h2> Zacznij pomagać! <br/>
                                Oddaj niechciane rzeczy w zaufane ręce
-                            </p>
-                              <img src={decoration} style={{width: '200px'}}/>
+                            </h2>
+                              <img src={decoration} style={{width: '180px'}}/>
                            <div className='main_button'>
                              <button><NavLink  activeStyle={style_button} to={'/logowanie'}>oddaj <br/> rzeczy</NavLink></button>
                              <button><NavLink  activeStyle={style_button} to={'/logowanie'}>zorganizuj zbiórkę</NavLink></button>

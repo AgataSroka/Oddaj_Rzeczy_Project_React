@@ -12,8 +12,8 @@ class SimpleSteps extends Component{
         return(
             <div className='simple_steps_1' name="SimpleSteps">
                 <div className='main_text'>
-                <p>Wystarczą 4 proste kroki</p>
-                <img src={decoration} style={{width: '200px'}}/>
+                <h2>Wystarczą 4 proste kroki</h2>
+                <img src={decoration} style={{width: '180px'}}/>
                 </div>
                 <div className='background'>
                     <div className='simple_steps_2'>

@@ -13,10 +13,26 @@ class Navigation extends Component{
         };
         const styleLogin ={
             color:'#3C3C3C',
+            textDecoration: 'none'
+        };
+        const styleLoginRejestr ={
+            color:'#3C3C3C',
+            textDecoration: 'none',
+            border: '1px solid #FAD648',
+            padding: '5px'
+        };
+        const styleMenuStart={
+            border:'1px solid #3C3C3C',
+            padding: '5px 15px 5px 15px',
+            textDecoration: 'none',
+            color: '#3C3C3C'
         };
         const styleMenu={
-            border:'1px solid #3C3C3C',
+
+            textDecoration: 'none',
+            color: '#3C3C3C'
         };
+
         const selectedStyleMenu={
               color: '#3C3C3C',
         };
@@ -25,12 +41,12 @@ class Navigation extends Component{
             <nav>
                 <ul className="login">
                     <li><NavLink style={styleLogin} activeStyle={selectedStyleLogin} exact to={"/logowanie"}>Zaloguj</NavLink></li>
-                    <li><NavLink style={styleLogin} activeStyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż konto</NavLink></li>
+                    <li><NavLink style={styleLoginRejestr} activeStyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż konto</NavLink></li>
                 </ul>
                 <ul className="menu">
-                    <li><NavLink style={styleMenu} activeStyle={selectedStyleMenu} exact to={"/Start"}>Start</NavLink></li>
+                    <li><NavLink style={styleMenuStart} activeStyle={selectedStyleMenu} exact to={"/Start"}>Start</NavLink></li>
                     <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to='SimpleSteps' spy={true} smooth={true} duration={500}>O co chodzi?</Link></li>
-                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true} duration={500}>O Nas</Link></li>
+                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true} duration={500}>O nas</Link></li>
                     <li><Link style={styleMenu} activeStyle={selectedStyleMenu}  to="WhoWeHelp" spy={true} smooth={true} duration={500}>Fundacja i organizacje</Link></li>
                     <li><Link style={styleMenu} activeStyle={selectedStyleMenu}  to="Contact" spy={true} smooth={true} duration={500}>Kontakt</Link></li>
                 </ul>
