@@ -5,6 +5,7 @@
   display: block;
   margin: auto;
   color: #3C3C3C;
+  cursor: pointer;
 
 .main_help {
   display: block;
@@ -28,6 +29,8 @@
       background-color: white;
       margin-right: 50px;
       border:none;
+      cursor: pointer;
+      outline: none;
     }
     .border{
       border: 1px solid black;

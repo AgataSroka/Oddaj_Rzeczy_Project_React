@@ -1,11 +1,12 @@
 .contact {
-  height: 750px;
+  height: 770px;
   width: 100%;
   position: relative;
   margin: auto;
+  cursor: pointer;
   &:after {
     content: "";
-    background: url("../../../assets/assets/Background-Contact-Form.jpg") no-repeat;
+    background: url("../../../assets/assets/Background-Contact-Form.jpg");
     background-size: 100%;
     opacity: 0.4;
     top: 0;
@@ -22,8 +23,8 @@
     text-align: center;
     width: 400px;
     height: 100%;
-    padding-top: 150px;
     margin-left: 900px;
+    align-items: center;
     label{
       font-size: 14px;
       font-weight: bolder;
@@ -31,8 +32,17 @@
 h2{
   font-size: 26px;
 }
+    .form_success{
+      margin-top: 20px;
+      color: green;
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+
+    }
     ::placeholder{
       color: lightgrey;
+      cursor: pointer;
     }
     .form_flex {
       display: flex;
@@ -51,6 +61,7 @@ h2{
         border-bottom: 1px solid #737373;
         margin-right: 10px;
         background-color: transparent;
+        cursor: pointer;
       }
     }
   }
@@ -61,8 +72,9 @@ h2{
     outline: 0;
     border-bottom: 1px solid #737373;
     background-color: transparent;
+    cursor: pointer;
   }
-  button{
+  .button{
     width: 110px;
     height: 35px;
     border: 1px solid #737373;
@@ -71,13 +83,13 @@ h2{
     margin-top: 20px;
     margin-left: 300px;
     color: #737373;
+    outline: none;
+    cursor: pointer;
   }
-  footer{
-    display:inline;
-    text-align: center;
-    .icons{
-      margin-top: 15px;
-      margin-left: 20px;
-    }
+  .form_valid{
+    display: flex;
+    color:red;
+    font-size: 10px;
+    font-weight: 700;
   }
 }

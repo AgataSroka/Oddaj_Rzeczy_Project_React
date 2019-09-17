@@ -6,6 +6,7 @@ import WhoWeHelp from './WhoWeHelp/WhoWeHelp';
 import AboutUs from './AboutUs/AboutUs';
 import SimpleSteps from './SimpleSteps/SimpleSteps';
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 
 
@@ -19,9 +20,10 @@ render(){
             <AboutUs/>
             <WhoWeHelp/>
             <Contact/>
+            <Footer/>
         </>
     )
 }
 }
-export default Home
+export default Home;
 
