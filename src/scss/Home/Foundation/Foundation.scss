@@ -1,0 +1,66 @@
+.main_4 {
+  width: 70vw;
+  display: block;
+  align-items: center;
+  align-content: center;
+  padding: 0 80px 0 0;
+
+  ul{
+    list-style-type: none;
+    width: 70vw;
+    display: block;
+  }
+
+  .main_text_5 {
+    line-height: 10px;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin: 0 50px 0 0;
+    text-align: left;
+    padding-right: 50px;
+
+    .title_mission {
+      display: inline-flex;
+      width: 600px;
+      height: 50px;
+      line-height: 10px;
+
+      h4 {
+        font-size: 18px;
+        width: 100%;
+      }
+
+      .text_mission {
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+.main_things {
+  width: 100%;
+  display: flex;
+  text-align: right;
+
+
+  .things {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 600px;
+  }
+}
+    }
+  .page_numbers {
+    list-style-type: none;
+    display: inline-flex;
+    width: 100px;
+    padding-right: 40px;
+
+  li {
+    margin: auto;
+  }
+
+  }
+
+}
+

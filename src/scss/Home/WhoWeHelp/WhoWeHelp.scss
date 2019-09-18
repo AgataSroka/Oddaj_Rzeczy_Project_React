@@ -6,20 +6,21 @@
   margin: auto;
   color: #3C3C3C;
   cursor: pointer;
+  padding-bottom: 70px;
 
 .main_help {
   display: block;
-  margin: 50px;
 
   h2{
     font-size: 26px;
   }
 
   .buttons {
-    margin-left: 100px;
     margin-top: 50px;
     text-align: center;
     display: flex;
+    margin-left: 200px;
+
 
     button {
       width: 200px;
@@ -27,7 +28,6 @@
       font-size: 18px;
       font-weight: lighter;
       background-color: white;
-      margin-right: 50px;
       border:none;
       cursor: pointer;
       outline: none;
@@ -38,7 +38,8 @@
   }
 }
   .help_background{
-    width: 55%;
+    width: 45%;
+    height: 100px;
     margin: auto;
     padding-top: 40px;
     .help_text{
@@ -57,10 +58,5 @@
     display: flex;
     align-items: center;
     width: 100%;
-
-    .right_section {
-      display: inline-flex;
-      align-content: flex-end;
-    }
   }
 }

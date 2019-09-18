@@ -1,17 +1,21 @@
 import React, {Component} from "react";
 import decoration from "../../../assets/assets/Decoration.svg";
 import '../../../scss/Home/WhoWeHelp/WhoWeHelp.scss'
+import Foundation from "./Foundation";
+import Organization from "./Organization";
+import Local from "./Local";
+
 
 const spanFoundation =  <span className="help_text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim bibendum tempus.
                         Donec bibendum sagittis finibus.
                         Vestibulum luctus, sapien et mattis dictum, massa ligula laoreet sapien, a viverra.
-                    </span>;
+                        </span>;
 const spanOrganization =  <span className="help_text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum ultrices dictum.
                        Quisque posuere eros vel justo malesuada molestie. Vivamus cursus dui libero,
                         at sodales mi consequat at.
-                    </span>;
+                         </span>;
 const spanLocal =  <span className="help_text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis cursus justo, sed feugiat risus.
                         Phasellus rhoncus mauris nec ex elementum, nec varius urna fermentum.
@@ -47,7 +51,7 @@ class WhoWeHelp extends Component{
                     <div className='buttons'>
                         <button className={this.state.border_1} onClick={this.handleClickFoundation}>Fundacjom</button>
                         <button className={this.state.border_2} onClick={this.handleClickOrganization}>Organizacjom pozarządowym</button>
-                        <button className={this.state.border_3} onClick={this.handleClickLocal} >Lokalnym zbiórkom</button>
+                        <button className={this.state.border_3} onClick={this.handleClickLocal} >Lokalnym <br/> zbiórkom</button>
                     </div>
                     <div className='help_background'>
                         {this.state.foundation && spanFoundation}
@@ -57,33 +61,9 @@ class WhoWeHelp extends Component{
                 </div>
                 <div className='main_section'>
                     <div className='flex'>
-                        <div>
-                            <h3>Fundacja "Dbam o zdrowie"</h3>
-                            <p> Cel i misja: pomoc osobom znajdującym się w trudnej sytuacji życiowej. </p>
-                        </div>
-                        <div className='right_section'>
-                            <p style={{marginLeft: '160px'}} >ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div className='flex'>
-                        <div>
-                            <h3>Fundacja "Dla dzieci"</h3>
-                            <p> Cel i misja: Pomoc dzieciom z ubogich rodzin. </p>
-                        </div>
-                        <div className='right_section'>
-                            <p  style={{marginLeft: '500px'}}>ubrania, meble, zabawki</p>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div className='flex'>
-                        <div>
-                            <h3>Fundacja "Bez domu"</h3>
-                            <p> Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania. </p>
-                        </div>
-                        <div className='right_section'>
-                            <p style={{marginLeft: '300px'}}>ubrania, jedzenie, ciepłe koce</p>
-                        </div>
+                        {this.state.foundation && <Foundation/>}
+                        {this.state.organization && <Organization/>}
+                        {this.state.local && <Local/>}
                     </div>
                 </div>
             </div>

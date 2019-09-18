@@ -1,0 +1,49 @@
+.main_4 {
+  width: 70vw;
+  display: block;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+
+  ul{
+    list-style-type: none;
+    width: 70vw;
+    display: block;
+  }
+
+  .main_text_5 {
+    line-height: 10px;
+    display: inline;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+
+    .title_mission {
+      display: block;
+      width: 70vw;
+
+      h4 {
+        font-size: 20px;
+        width: 100%;
+      }
+
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      text-align: right;
+    }
+
+  }
+  .page_numbers {
+    list-style-type: none;
+    display: inline-flex;
+  }
+
+}
+
