@@ -36,7 +36,22 @@ class Contact extends Component{
         const name = this.state.name;
         const email = this.state.email;
         const message = this.state.message;
+        const url =  `https://fer-api.coderslab.pl/v1/portfolio/contact`;
         e.preventDefault();
+
+        fetch(url,{
+            method: 'post',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({name: this.state.name, email: this.state.email, message:this.state.message})
+        })
+        .then(function (value) {
+            console.log(value)
+        })
+            .catch(function (error) {
+                console.log(error)
+            });
 
         if(nameReg.test(name) && emailReg.test(email) && message.length >= 120) {
             this.setState({sendForm: true})

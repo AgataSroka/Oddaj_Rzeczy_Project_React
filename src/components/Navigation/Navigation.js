@@ -13,23 +13,32 @@ class Navigation extends Component{
         };
         const styleLogin ={
             color:'#3C3C3C',
-            textDecoration: 'none'
+            padding: '5px 15px 5px 15px',
+            textDecoration: 'none',
+            fontWeight: 'bolder',
+            fontSize: '14px'
         };
         const styleLoginRejestr ={
             color:'#3C3C3C',
             textDecoration: 'none',
             border: '1px solid #FAD648',
-            padding: '5px'
+            padding: '5px',
+            fontWeight: 'bolder',
+            fontSize: '14px'
         };
         const styleMenuStart={
             border:'1px solid #3C3C3C',
             padding: '5px 15px 5px 15px',
             textDecoration: 'none',
-            color: '#3C3C3C'
+            color: '#3C3C3C',
+            fontWeight: 'bolder',
+            fontSize: '14px'
         };
         const styleMenu={
 
             textDecoration: 'none',
+            fontWeight: 'bolder',
+            fontSize: '14px',
             color: '#3C3C3C'
         };
 
