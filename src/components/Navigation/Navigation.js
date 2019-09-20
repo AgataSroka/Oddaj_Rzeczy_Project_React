@@ -18,7 +18,7 @@ class Navigation extends Component{
             fontWeight: 'bolder',
             fontSize: '14px'
         };
-        const styleLoginRejestr ={
+        const styleLoginRegister ={
             color:'#3C3C3C',
             textDecoration: 'none',
             border: '1px solid #FAD648',
@@ -50,7 +50,7 @@ class Navigation extends Component{
             <nav>
                 <ul className="login">
                     <li><NavLink style={styleLogin} activeStyle={selectedStyleLogin} exact to={"/logowanie"}>Zaloguj</NavLink></li>
-                    <li><NavLink style={styleLoginRejestr} activeStyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż konto</NavLink></li>
+                    <li><NavLink style={styleLoginRegister} activeStyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż konto</NavLink></li>
                 </ul>
                 <ul className="menu">
                     <li><NavLink style={styleMenuStart} activeStyle={selectedStyleMenu} exact to={"/Start"}>Start</NavLink></li>

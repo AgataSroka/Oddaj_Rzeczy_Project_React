@@ -3,7 +3,7 @@ import '../../scss/App/App.scss';
 import Home from "../Home/Home";
 import {HashRouter, Switch, Route} from "react-router-dom";
 import Login from "./Login";
-import Rejestr from "./Rejestr";
+import Rejestr from "./Register";
 import Logout from "./Logout"
 
 

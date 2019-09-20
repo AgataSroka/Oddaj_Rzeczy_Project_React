@@ -1,36 +1,44 @@
-.rejestr_main{
+.register_main {
   width: 80%;
   height: 100vh;
   margin: auto;
-  .rejestr_container{
+
+  .register_container {
     margin-top: 50px;
     text-align: center;
     display: block;
-    h2{
+
+    h2 {
       font-size: 28px;
       color: #3C3C3C;
     }
-    .rejestr_inputs{
+
+    .register_inputs {
       margin: 40px auto;
       padding-top: 20px;
       display: block;
       width: 300px;
       height: 250px;
       background-color: #f2f3f2;
-      .one_input_rejestr{
+
+      .one_input_register {
         display: block;
         width: 100px;
         height: 70px;
         text-align: center;
         margin-top: 10px;
-        label{
+
+        label {
+          display: inline;
           width: 200px;
           font-size: 12px;
           color: #3C3C3C;
           font-weight: bolder;
           padding-left: 25px;
+          white-space: nowrap;
         }
-        input{
+
+        input {
           width: 200px;
           border: 0;
           outline: 0;
@@ -41,17 +49,40 @@
           margin-left: 50px;
 
         }
+        .form_valid {
+          display: flex;
+          color: red;
+          font-size: 10px;
+          font-weight: 700;
+          white-space: nowrap;
+          padding-left: 50px;
+          padding-top: 5px;
+        }
       }
 
     }
 
-    .login_buttons_rejestr input {
-      width: 80px;
-      height: 40px;
-      background-color: transparent;
-      font-size: 14px;
-      outline: none;
-      cursor: pointer;
+    .register_buttons {
+      margin-left: 370px;
+      display: flex;
+      align-content: space-between;
+
+
+      input {
+        width: 90px;
+        height: 40px;
+        background-color: transparent;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+        margin: 0 230px 0 0;
+        border: none;
+        color: #3C3C3C;
+      }
+      .input_border:hover{
+        border: 1px solid #3C3C3C;
+      }
     }
   }
 }
+
