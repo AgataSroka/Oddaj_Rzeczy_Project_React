@@ -1,49 +1,55 @@
-.who_we_help{
+.who_we_help {
   height: 750px;
-  width: 70%;
+  width: 85%;
   text-align: center;
   display: block;
   margin: auto;
   color: #3C3C3C;
   cursor: pointer;
-  padding-bottom: 70px;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 
-.main_help {
-  display: block;
+  .main_help {
+    display: block;
 
-  h2{
-    font-size: 26px;
+    h2 {
+      font-size: 26px;
+    }
+
+    .buttons {
+      margin: auto;
+      width: 40vw;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 150px 0 150px;
+
+
+      button {
+        width: 150px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: lighter;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+      }
+
+      .border {
+        border: 1px solid black;
+      }
+    }
   }
 
-  .buttons {
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    margin-left: 200px;
-
-
-    button {
-      width: 200px;
-      height: 70px;
-      font-size: 18px;
-      font-weight: lighter;
-      background-color: white;
-      border:none;
-      cursor: pointer;
-      outline: none;
-    }
-    .border{
-      border: 1px solid black;
-    }
-  }
-}
-  .help_background{
-    width: 45%;
+  .help_background {
+    width: 500px;
     height: 100px;
     margin: auto;
     padding-top: 40px;
-    .help_text{
+
+    .help_text {
       font-weight: bolder;
     }
 
@@ -58,6 +64,6 @@
   .flex {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 70%;
   }
 }

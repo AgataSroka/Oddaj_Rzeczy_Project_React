@@ -13,66 +13,71 @@
     font-size: 16px;
     font-weight: 300;
     color: #3C3C3C;
-    h2{
-      color:#3C3C3C;
+
+    h2 {
+      color: #3C3C3C;
       font-size: 26px;
     }
   }
-.background {
-  height: 270px;
-  background-color: map_get($colors, grey);
-  width: 100%;
-  margin-top: 20px;
 
-  .simple_steps_2 {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    width: 70%;
-    height: 200px;
+  .background {
+    height: 270px;
     background-color: map_get($colors, grey);
+    width: 100%;
+    margin-top: 20px;
 
-
-    .one_step {
-      width: 120px;
-      height: 100%;
-      display: block;
-      text-align: center;
+    .simple_steps_2 {
+      display: flex;
       margin: auto;
-      padding-top: 50px;
-      h3{
-        font-size: 14px;
-        color:#3C3C3C ;
-      }
-      p{
-        font-size: 13px;
-        color:#3C3C3C ;
-      }
+      text-align: center;
+      width: 70%;
+      height: 200px;
+      background-color: map_get($colors, grey);
 
-      hr{
-        width: 50px;
-        border-bottom: 0.5px solid #3C3C3C;
-        color:#3C3C3C ;
+
+      .one_step {
+        width: 120px;
+        height: 100%;
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding-top: 50px;
+
+        h3 {
+          font-size: 14px;
+          color: #3C3C3C;
+        }
+
+        p {
+          font-size: 13px;
+          color: #3C3C3C;
+        }
+
+        hr {
+          width: 50px;
+          border-bottom: 0.5px solid #3C3C3C;
+          color: #3C3C3C;
+        }
+      }
+    }
+
+    button {
+      text-align: center;
+      border: 1px solid #3C3C3C;
+      height: 90px;
+      width: 220px;
+      background-color: white;
+      margin-top: 100px;
+      outline: none;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #3C3C3C;
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
       }
     }
   }
-
-  button {
-    text-align: center;
-    border: 1px solid #3C3C3C;
-    height: 90px;
-    width: 220px;
-    background-color: white;
-    margin-top: 100px;
-    outline: none;
-    a{
-      text-transform: uppercase;
-      text-decoration: none;
-      color:#3C3C3C ;
-      font-size: 25px;
-      font-family: 'Open Sans', sans-serif;
-    }
-  }
-}
 }
 

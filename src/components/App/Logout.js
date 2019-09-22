@@ -4,9 +4,9 @@ import Navigation from "../Navigation/Navigation";
 import "../../scss/Logout/Logout.scss";
 
 
-class Logout extends Component{
-    render(){
-        return(
+class Logout extends Component {
+    render() {
+        return (
             <>
 
                 <section className='logout_main'>
@@ -22,4 +22,5 @@ class Logout extends Component{
         )
     }
 }
+
 export default Logout

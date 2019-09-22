@@ -4,6 +4,7 @@
   position: relative;
   margin: auto;
   cursor: pointer;
+
   &:after {
     content: "";
     background: url("../../../assets/assets/Background-Contact-Form.jpg");
@@ -17,7 +18,7 @@
     z-index: -1;
   }
 
-  .main_contact{
+  .main_contact {
     display: block;
     align-content: flex-end;
     text-align: center;
@@ -25,14 +26,17 @@
     height: 100%;
     margin-left: 900px;
     align-items: center;
-    label{
+
+    label {
       font-size: 14px;
       font-weight: bolder;
     }
-h2{
-  font-size: 26px;
-}
-    .form_success{
+
+    h2 {
+      font-size: 26px;
+    }
+
+    .form_success {
       margin-top: 20px;
       color: green;
       font-size: 14px;
@@ -40,10 +44,12 @@ h2{
       display: block;
 
     }
-    ::placeholder{
+
+    ::placeholder {
       color: lightgrey;
       cursor: pointer;
     }
+
     .form_flex {
       display: flex;
       text-align: left;
@@ -54,7 +60,8 @@ h2{
         text-align: left;
 
       }
-      input{
+
+      input {
         width: 200px;
         border: 0;
         outline: 0;
@@ -67,7 +74,7 @@ h2{
     }
   }
 
-  textarea{
+  textarea {
     resize: none;
     border: 0;
     outline: 0;
@@ -75,7 +82,8 @@ h2{
     background-color: transparent;
     cursor: pointer;
   }
-  .button{
+
+  .button {
     width: 110px;
     height: 35px;
     border: 1px solid #737373;
@@ -87,9 +95,10 @@ h2{
     outline: none;
     cursor: pointer;
   }
-  .form_valid{
+
+  .form_valid {
     display: flex;
-    color:red;
+    color: red;
     font-size: 10px;
     font-weight: 700;
   }

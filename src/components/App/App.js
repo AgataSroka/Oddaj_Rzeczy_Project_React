@@ -7,12 +7,12 @@ import Rejestr from "./Register";
 import Logout from "./Logout"
 
 
-class App extends Component{
+class App extends Component {
     render() {
         return (
             <HashRouter>
                 <Switch>
-                    <Route exact path={'/'} component={Home}/>
+                    <Route exact path={'/Start'} component={Home}/>
                     <Route exact path={'/logowanie'} component={Login}/>
                     <Route exact path={'/rejestracja'} component={Rejestr}/>
                     <Route exact path={'/wylogowano'} component={Logout}/>
@@ -21,4 +21,5 @@ class App extends Component{
         );
     }
 }
+
 export default App;

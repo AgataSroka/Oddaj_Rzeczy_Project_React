@@ -1,22 +1,25 @@
-.logout_main{
+.logout_main {
   width: 80%;
   height: 100vh;
   margin: auto;
-  .logout_container{
+
+  .logout_container {
     margin: auto;
     text-align: center;
     display: block;
     padding-top: 50px;
-    h2{
+
+    h2 {
       font-size: 28px;
       color: #3C3C3C;
     }
-    input{
+
+    input {
       margin-top: 30px;
       width: 120px;
       height: 40px;
       background-color: transparent;
-      border: 1px solid #3C3C3C ;
+      border: 1px solid #3C3C3C;
     }
   }
 }

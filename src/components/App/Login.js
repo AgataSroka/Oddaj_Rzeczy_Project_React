@@ -6,7 +6,7 @@ import '../../scss/Login/Login.scss';
 const emailReg = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
 
 class Login extends Component {
-    state={
+    state = {
         email: '',
         password: '',
         errorEmail: false,
@@ -29,13 +29,13 @@ class Login extends Component {
         const password = this.state.password;
         e.preventDefault();
 
-        if(emailReg.test(email) && password.length >= 6) {
+        if (emailReg.test(email) && password.length >= 6) {
             this.setState({sendForm: true})
         } else {
-            if(!emailReg.test(email)){
+            if (!emailReg.test(email)) {
                 this.setState({errorEmail: true})
             }
-            if(password.length<6){
+            if (password.length < 6) {
                 this.setState({errorPassword: true})
             }
         }
@@ -49,24 +49,26 @@ class Login extends Component {
                     <Navigation/>
                     <div className='login_container'>
                         <form onSubmit={this.handleSubmit}>
-                        <h2> Zaloguj się </h2>
-                        <img src={decoration} style={{width: '180px'}}/>
-                        <div className='login_inputs'>
-                            <div className='one_input'>
-                                <label>Email</label>
-                                <input onChange={this.handleEmailChange}/>
-                                {this.state.errorEmail && <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
+                            <h2> Zaloguj się </h2>
+                            <img src={decoration} style={{width: '180px'}}/>
+                            <div className='login_inputs'>
+                                <div className='one_input'>
+                                    <label>Email</label>
+                                    <input onChange={this.handleEmailChange}/>
+                                    {this.state.errorEmail &&
+                                    <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
+                                </div>
+                                <div className='one_input'>
+                                    <label>Hasło</label>
+                                    <input onChange={this.handlePasswordChange}/>
+                                    {this.state.errorPassword &&
+                                    <span className='form_valid'> Podane hasło jest za krótkie! </span>}
+                                </div>
                             </div>
-                            <div className='one_input'>
-                                <label>Hasło</label>
-                                <input onChange={this.handlePasswordChange}/>
-                                {this.state.errorPassword && <span className='form_valid'> Podane hasło jest za krótkie! </span>}
+                            <div className='login_buttons'>
+                                <input className='input_border' type='submit' value='Załóż konto'/>
+                                <input className='input_border' type='submit' value='Zaloguj'/>
                             </div>
-                        </div>
-                        <div className='login_buttons'>
-                            <input className='input_border' type='submit' value='Załóż konto'/>
-                            <input  className='input_border' type='submit' value='Zaloguj'/>
-                        </div>
                         </form>
                     </div>
                 </section>

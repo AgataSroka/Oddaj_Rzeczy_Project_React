@@ -5,8 +5,8 @@ import '../../scss/Register/Register.scss';
 
 const emailReg = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
 
-class Register extends Component{
-    state={
+class Register extends Component {
+    state = {
         email: '',
         password: '',
         password2: '',
@@ -50,38 +50,42 @@ class Register extends Component{
             }
         }
     };
-    render(){
-        return(
+
+    render() {
+        return (
             <>
 
                 <section className='register_main'>
                     <Navigation/>
 
-                    <form className='register_container'onSubmit={this.handleSubmit} >
+                    <form className='register_container' onSubmit={this.handleSubmit}>
                         <div>
-                        <h2> Załóż konto </h2>
-                        <img src={decoration} style={{width: '180px'}}/>
-                        <div className='register_inputs'>
-                            <div className='one_input_register' >
-                                <label>Email</label>
-                                <input onChange={this.handleEmailChange} />
-                                {this.state.errorEmail && <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
+                            <h2> Załóż konto </h2>
+                            <img src={decoration} style={{width: '180px'}}/>
+                            <div className='register_inputs'>
+                                <div className='one_input_register'>
+                                    <label>Email</label>
+                                    <input onChange={this.handleEmailChange}/>
+                                    {this.state.errorEmail &&
+                                    <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
+                                </div>
+                                <div className='one_input_register'>
+                                    <label>Hasło</label>
+                                    <input onChange={this.handlePasswordChange}/>
+                                    {this.state.errorPassword &&
+                                    <span className='form_valid'> Podane hasło jest za krótkie! </span>}
+                                </div>
+                                <div className='one_input_register'>
+                                    <label style={{marginLeft: '25px'}}>Powtórz hasło</label>
+                                    <input onChange={this.handlePassword2Change}/>
+                                    {this.state.errorPassword2 &&
+                                    <span className='form_valid'> Musi być takie jak hasło! </span>}
+                                </div>
                             </div>
-                            <div className='one_input_register'>
-                                <label>Hasło</label>
-                                <input onChange={this.handlePasswordChange}/>
-                                {this.state.errorPassword && <span className='form_valid'> Podane hasło jest za krótkie! </span>}
+                            <div className='register_buttons'>
+                                <input className='input_border' type='submit' value='Załóż konto'/>
+                                <input className='input_border' type='submit' value='Zaloguj'/>
                             </div>
-                            <div className='one_input_register'>
-                                <label style={{marginLeft: '25px'}}>Powtórz hasło</label>
-                                <input onChange={this.handlePassword2Change}/>
-                                {this.state.errorPassword2 && <span className='form_valid'> Musi być takie jak hasło! </span>}
-                            </div>
-                        </div>
-                        <div className='register_buttons'>
-                            <input className='input_border' type='submit' value='Załóż konto'/>
-                            <input className='input_border' type='submit' value='Zaloguj'/>
-                        </div>
                         </div>
                     </form>
                 </section>
@@ -89,4 +93,5 @@ class Register extends Component{
         )
     }
 }
+
 export default Register

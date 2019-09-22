@@ -1,28 +1,32 @@
-.about_us{
+.about_us {
   height: 650px;
   margin-top: 50px;
   display: flex;
 
-  .about_text{
+  .about_text {
     text-align: center;
     width: 50%;
     background-color: #F0F1F1;
-    .text_2{
+
+    .text_2 {
       width: 480px;
       margin: auto;
       align-items: center;
       line-height: 40px;
       padding-top: 100px;
       color: #3C3C3C;
-      h2{
+
+      h2 {
         font-size: 26px;
       }
-      p{
+
+      p {
         font-size: 22px;
       }
     }
   }
-  .about_photo{
+
+  .about_photo {
     background-image: url("../../../assets/assets/People.jpg");
     background-size: 130%;
     background-repeat: no-repeat;

@@ -34,7 +34,7 @@ class Organization extends Component{
                 {
                     title:  '"Lorem ipsum"',
                     mission: 'Pomoc dzieciom z ubogich rodzin',
-                    things:  'lorem ipsum dolor sit amet, consectetur adipiscing elit'
+                    things:  'consectetur adipiscing elit'
                 },
 
 
@@ -65,12 +65,12 @@ class Organization extends Component{
                    const elements = currentOrganization.map((organization, i) => {
                        return(
                                <div className='main_text_5' >
-                           <li  key={i}> <div className='title_mission'><h4> Fundacja {organization.title}</h4><span className='text_mission'> Cel i misja: {organization.mission}</span></div>
+                           <li  key={i}> <div className='title_mission'><h4> Organizacja {organization.title}</h4><span className='text_mission'> Cel i misja: {organization.mission}</span></div>
                             <div className='main_things'>
                            <span className='things'>{organization.things}</span>
                             </div>
-                               <hr style={{marginRight: '50px'}}/>
                            </li>
+                           <hr style={{marginRight: '50px', marginTop: '30px'}}/>
                                </div>
 
                        )
