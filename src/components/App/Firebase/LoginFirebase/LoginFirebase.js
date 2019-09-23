@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import decoration from "../../assets/assets/Decoration.svg";
-import '../../scss/Login/Login.scss';
-import Navigation from "../Navigation/Navigation";
+import decoration from "../../../../assets/assets/Decoration.svg";
+import Navigation from "../../../Navigation/Navigation";
 import {NavLink} from "react-router-dom";
 
 const emailReg = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
@@ -9,7 +8,7 @@ const emailReg = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/;
 class LoginFirebase extends Component {
     state = {
         email: '',
-        password: '',
+       password: '',
         errorEmail: false,
         errorPassword: false,
         sendForm: false
@@ -65,7 +64,7 @@ class LoginFirebase extends Component {
                             <div className='login_inputs'>
                                 <div className='one_input'>
                                     <label>Email</label>
-                                    <input onChange={this.handleEmailChange}/>
+                                    <input onChange={this.handleEmailChange} type='password'/>
                                     {this.state.errorEmail &&
                                     <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
                                 </div>

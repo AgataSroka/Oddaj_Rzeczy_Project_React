@@ -56,7 +56,7 @@ class Navigation extends Component {
                 </ul>
                 <ul className="menu">
                     <li><NavLink style={styleMenuStart} activeStyle={selectedStyleMenu} exact
-                                 to={"/Start"}>Start</NavLink></li>
+                                 to={"/"}>Start</NavLink></li>
                     <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to='SimpleSteps' spy={true}
                               smooth={true} duration={500}>O co chodzi?</Link></li>
                     <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true}

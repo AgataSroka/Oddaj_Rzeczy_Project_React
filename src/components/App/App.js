@@ -3,8 +3,8 @@ import '../../scss/App/App.scss';
 import Home from "../Home/Home";
 import {HashRouter, Switch, Route} from "react-router-dom";
 import Login from "./Login";
-import Rejestr from "./Register";
-import Logout from "./Logout"
+import Register from "./Register";
+import Logout from "./Logout";
 
 
 class App extends Component {
@@ -12,9 +12,9 @@ class App extends Component {
         return (
             <HashRouter>
                 <Switch>
-                    <Route exact path={'/Start'} component={Home}/>
+                    <Route exact path={'/'} component={Home}/>
                     <Route exact path={'/logowanie'} component={Login}/>
-                    <Route exact path={'/rejestracja'} component={Rejestr}/>
+                    <Route exact path={'/rejestracja'} component={Register}/>
                     <Route exact path={'/wylogowano'} component={Logout}/>
                 </Switch>
             </HashRouter>

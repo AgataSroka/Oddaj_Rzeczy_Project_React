@@ -14,12 +14,17 @@
       color: #3C3C3C;
     }
 
-    input {
+    button {
       margin-top: 30px;
       width: 120px;
       height: 40px;
       background-color: transparent;
       border: 1px solid #3C3C3C;
+      a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+      }
     }
   }
 }

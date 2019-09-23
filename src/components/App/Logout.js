@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import decoration from "../../assets/assets/Decoration.svg";
 import Navigation from "../Navigation/Navigation";
 import "../../scss/Logout/Logout.scss";
+import {NavLink} from "react-router-dom";
 
 
 class Logout extends Component {
@@ -15,7 +16,7 @@ class Logout extends Component {
                         <h2> Wylogowanie nastąpiło <br/> pomyślnie! </h2>
                         <img src={decoration} style={{width: '180px'}}/>
                         <br/>
-                        <input type='submit' value='Strona główna'/>
+                        <button type='submit'><NavLink exact to={"/"}>Start</NavLink></button>
                     </div>
                 </section>
             </>

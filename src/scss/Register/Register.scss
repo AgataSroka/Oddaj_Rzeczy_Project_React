@@ -69,7 +69,7 @@
       align-content: space-between;
 
 
-      input {
+      .input {
         width: 90px;
         height: 40px;
         background-color: transparent;
@@ -79,6 +79,10 @@
         margin: 0 230px 0 0;
         border: none;
         color: #3C3C3C;
+        a{
+          text-decoration: none;
+          color: #3C3C3C;
+        }
       }
 
       .input_border:hover {
