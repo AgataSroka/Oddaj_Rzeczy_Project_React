@@ -4,11 +4,11 @@ import './index.scss';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 import './scss/Main/main.scss';
-import Firebase, { FirebaseContext } from './components/App/Firebase/RegisterFirebase/Firebase';
+import Firebase_register, { FirebaseContext } from './components/App/Firebase/RegisterFirebase/Firebase_register';
 
 ReactDOM.render(
 
-    <FirebaseContext.Provider value={new Firebase()}>
+    <FirebaseContext.Provider value={new Firebase_register()}>
         <App />
     </FirebaseContext.Provider>,
     document.getElementById('root'),

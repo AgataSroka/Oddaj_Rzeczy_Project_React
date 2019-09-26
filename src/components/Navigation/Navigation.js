@@ -49,21 +49,21 @@ class Navigation extends Component {
         return (
             <nav>
                 <ul className="login">
-                    <li><NavLink style={styleLogin} activeStyle={selectedStyleLogin} exact
+                    <li><NavLink style={styleLogin} activestyle={selectedStyleLogin} exact
                                  to={"/logowanie"}>Zaloguj</NavLink></li>
-                    <li><NavLink style={styleLoginRegister} activeStyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż
+                    <li><NavLink style={styleLoginRegister} activestyle={selectedStyleLogin} exact to={"/rejestracja"}>Załóż
                         konto</NavLink></li>
                 </ul>
                 <ul className="menu">
-                    <li><NavLink style={styleMenuStart} activeStyle={selectedStyleMenu} exact
+                    <li><NavLink style={styleMenuStart} activestyle={selectedStyleMenu} exact
                                  to={"/"}>Start</NavLink></li>
-                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to='SimpleSteps' spy={true}
+                    <li><Link style={styleMenu} activestyle={selectedStyleMenu} to='SimpleSteps' spy={true}
                               smooth={true} duration={500}>O co chodzi?</Link></li>
-                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true}
+                    <li><Link style={styleMenu} activestyle={selectedStyleMenu} to="AboutUs" spy={true} smooth={true}
                               duration={500}>O nas</Link></li>
-                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="WhoWeHelp" spy={true} smooth={true}
+                    <li><Link style={styleMenu} activestyle={selectedStyleMenu} to="WhoWeHelp" spy={true} smooth={true}
                               duration={500}>Fundacja i organizacje</Link></li>
-                    <li><Link style={styleMenu} activeStyle={selectedStyleMenu} to="Contact" spy={true} smooth={true}
+                    <li><Link style={styleMenu} activestyle={selectedStyleMenu} to="Contact" spy={true} smooth={true}
                               duration={500}>Kontakt</Link></li>
                 </ul>
             </nav>

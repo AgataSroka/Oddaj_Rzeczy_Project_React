@@ -53,7 +53,8 @@ class RegisterFirebase extends Component {
             .doCreateUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(authUser => {
                 this.setState({email:'', password:''});
-                console.log('gicik')
+                console.log('rejestracja');
+
             })
             .catch(error => {
                 this.setState({ error });

@@ -19,7 +19,12 @@ class LoginFirebase extends Component {
     handlePasswordChange = e => {
         this.setState({password: e.target.value});
     };
+    firebase;
     handleSubmit = e => {
+
+            const errorEmail = false;
+            const errorPassword = false;
+
 
         this.setState({errorEmail: false});
         this.setState({errorPassword: false});
@@ -27,6 +32,7 @@ class LoginFirebase extends Component {
 
         const email = this.state.email;
         const password = this.state.password;
+
         e.preventDefault();
 
         if (emailReg.test(email) && password.length >= 6) {
@@ -38,18 +44,22 @@ class LoginFirebase extends Component {
             if (password.length < 6) {
                 this.setState({errorPassword: true})
             }
-        }
-        this.props.firebase
-            .doCreateUserWithEmailAndPassword(this.state.email, this.state.password)
-            .then(authUser => {
-                this.setState({email:'', password:''});
-                console.log('gicik')
-            })
-            .catch(error => {
-                this.setState({ error });
-                console.log(error)
-            });
-    };
+
+
+                this.props.firebase
+                    .doSignInWithEmailAndPassword(this.state.email, this.state.password)
+                    .then(authUser => {
+                        this.setState({email: '', password: ''});
+                        console.log('zalogowanie');
+
+                    })
+                    .catch(error => {
+                        this.setState({error});
+                        console.error(error.code)
+                    });
+            }
+        };
+
 
     render() {
         return (
@@ -64,13 +74,13 @@ class LoginFirebase extends Component {
                             <div className='login_inputs'>
                                 <div className='one_input'>
                                     <label>Email</label>
-                                    <input onChange={this.handleEmailChange} type='password'/>
+                                    <input onChange={this.handleEmailChange}/>
                                     {this.state.errorEmail &&
                                     <span className='form_valid'> Podany email jest nieprawidłowy! </span>}
                                 </div>
                                 <div className='one_input'>
                                     <label>Hasło</label>
-                                    <input onChange={this.handlePasswordChange} type='password'/>
+                                    <input onChange={this.handlePasswordChange} type='password' autoComplete='on'/>
                                     {this.state.errorPassword &&
                                     <span className='form_valid'> Podane hasło jest za krótkie! </span>}
                                 </div>

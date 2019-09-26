@@ -12,7 +12,7 @@ var firebaseConfig = {
     appId: "1:524126275853:web:4719e4f3b1eff8d0b28844"
 };
 
-class Firebase {
+class Firebase_register {
     constructor() {
         app.initializeApp(firebaseConfig);
         this.auth = app.auth();
@@ -23,5 +23,5 @@ class Firebase {
         this.auth.signInWithEmailAndPassword(email, password);
 
 }
-export default Firebase;
+export default Firebase_register;
 export {FirebaseContext};
