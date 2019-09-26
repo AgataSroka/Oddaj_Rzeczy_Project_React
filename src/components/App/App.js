@@ -6,6 +6,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Logout from "./Logout";
 import LoginSuccess from "./LoginSuccess";
+import GiveThingsBack from "./GiveThingsBack";
 
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
                     <Route exact path={'/zalogowano'} component={LoginSuccess}/>
                     <Route exact path={'/rejestracja'} component={Register}/>
                     <Route exact path={'/wylogowano'} component={Logout}/>
-                    <Route exact path={'/oddaj-rzeczy'} component={Logout}/>
+                    <Route exact path={'/oddaj-rzeczy'} component={GiveThingsBack}/>
                 </Switch>
             </HashRouter>
         );

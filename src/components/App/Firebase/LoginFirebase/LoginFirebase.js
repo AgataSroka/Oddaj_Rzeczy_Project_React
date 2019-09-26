@@ -19,19 +19,14 @@ class LoginFirebase extends Component {
     handlePasswordChange = e => {
         this.setState({password: e.target.value});
     };
-    firebase;
+
     handleSubmit = e => {
 
-            const errorEmail = false;
-            const errorPassword = false;
+        this.setState({errorEmail: false, errorPassword: false, sendForm: false });
 
 
-        this.setState({errorEmail: false});
-        this.setState({errorPassword: false});
-        this.setState({sendForm: false});
+        const {email, password} = this.state;
 
-        const email = this.state.email;
-        const password = this.state.password;
 
         e.preventDefault();
 
@@ -45,21 +40,22 @@ class LoginFirebase extends Component {
                 this.setState({errorPassword: true})
             }
 
-
-                this.props.firebase
-                    .doSignInWithEmailAndPassword(this.state.email, this.state.password)
-                    .then(authUser => {
-                        console.log(authUser);
-                        sessionStorage.setItem("email",`${this.state.email}`);
-                        this.setState({email: '', password: ''});
-                        this.props.history.push("/");
-
-                    })
-                    .catch(error => {
-                        this.setState({error});
-                        console.error(error.code)
-                    });
             }
+
+        this.props.firebase
+            .doSignInWithEmailAndPassword(this.state.email, this.state.password)
+            .then(authUser => {
+                console.log(authUser);
+                sessionStorage.setItem("email",`${this.state.email}`);
+                this.setState({email: '', password: ''});
+                this.props.history.push("/");
+
+            })
+            .catch(error => {
+                console.error(error.code);
+                this.setState({error});
+
+            });
         };
 
 
@@ -89,7 +85,7 @@ class LoginFirebase extends Component {
                             </div>
                             <div className='login_buttons'>
                                 <button className='input input_border' type='submit'><NavLink exact to={"/rejestracja"}>Załóż konto</NavLink></button>
-                                <button className='input input_border' type='submit'><NavLink exact to={"/logowanie"}>Zaloguj</NavLink></button>
+                                <button className='input input_border' type='submit'><NavLink exact to={"/zalogowano"}>Zaloguj</NavLink></button>
                             </div>
                         </form>
                     </div>
