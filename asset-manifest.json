@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Oddaj_Rzeczy_Project_React/static/css/main.60e9d519.chunk.css",
+    "main.js": "/Oddaj_Rzeczy_Project_React/static/js/main.83943084.chunk.js",
+    "main.js.map": "/Oddaj_Rzeczy_Project_React/static/js/main.83943084.chunk.js.map",
+    "runtime~main.js": "/Oddaj_Rzeczy_Project_React/static/js/runtime~main.7762b948.js",
+    "runtime~main.js.map": "/Oddaj_Rzeczy_Project_React/static/js/runtime~main.7762b948.js.map",
+    "static/js/2.be9c6b2f.chunk.js": "/Oddaj_Rzeczy_Project_React/static/js/2.be9c6b2f.chunk.js",
+    "static/js/2.be9c6b2f.chunk.js.map": "/Oddaj_Rzeczy_Project_React/static/js/2.be9c6b2f.chunk.js.map",
+    "index.html": "/Oddaj_Rzeczy_Project_React/index.html",
+    "precache-manifest.5b26c911cf35d4690c0c78e966418a2f.js": "/Oddaj_Rzeczy_Project_React/precache-manifest.5b26c911cf35d4690c0c78e966418a2f.js",
+    "service-worker.js": "/Oddaj_Rzeczy_Project_React/service-worker.js",
+    "static/css/main.60e9d519.chunk.css.map": "/Oddaj_Rzeczy_Project_React/static/css/main.60e9d519.chunk.css.map",
+    "static/media/Contact.scss": "/Oddaj_Rzeczy_Project_React/static/media/Background-Contact-Form.f4db7ddd.jpg",
+    "static/media/Decoration.svg": "/Oddaj_Rzeczy_Project_React/static/media/Decoration.2290784e.svg",
+    "static/media/Facebook.svg": "/Oddaj_Rzeczy_Project_React/static/media/Facebook.df65b6c0.svg",
+    "static/media/Header.scss": "/Oddaj_Rzeczy_Project_React/static/media/Home-Hero-Image.e99903ed.jpg",
+    "static/media/Icon-1.svg": "/Oddaj_Rzeczy_Project_React/static/media/Icon-1.91147906.svg",
+    "static/media/Icon-2.svg": "/Oddaj_Rzeczy_Project_React/static/media/Icon-2.db91e33e.svg",
+    "static/media/Icon-3.svg": "/Oddaj_Rzeczy_Project_React/static/media/Icon-3.2cfe9dfe.svg",
+    "static/media/Icon-4.svg": "/Oddaj_Rzeczy_Project_React/static/media/Icon-4.436df0aa.svg",
+    "static/media/Instagram.svg": "/Oddaj_Rzeczy_Project_React/static/media/Instagram.703479fd.svg",
+    "static/media/AboutUs.scss": "/Oddaj_Rzeczy_Project_React/static/media/People.6fa36651.jpg",
+    "static/media/Signature.svg": "/Oddaj_Rzeczy_Project_React/static/media/Signature.e54cfcfc.svg"
+  }
+}
