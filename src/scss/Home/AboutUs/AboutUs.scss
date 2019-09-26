@@ -7,6 +7,7 @@
     text-align: center;
     width: 50%;
     background-color: #F0F1F1;
+    height: 650px ;
 
     .text_2 {
       width: 480px;
@@ -28,9 +29,10 @@
 
   .about_photo {
     background-image: url("../../../assets/assets/People.jpg");
-    background-size: 130%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
+    height: 650px;
 
   }
 }

@@ -49,8 +49,10 @@ class LoginFirebase extends Component {
                 this.props.firebase
                     .doSignInWithEmailAndPassword(this.state.email, this.state.password)
                     .then(authUser => {
+                        console.log(authUser);
+                        sessionStorage.setItem("email",`${this.state.email}`);
                         this.setState({email: '', password: ''});
-                        console.log('zalogowanie');
+                        this.props.history.push("/");
 
                     })
                     .catch(error => {

@@ -2,16 +2,16 @@
 nav {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 2rem;
 
   .login {
     list-style-type: none;
     display: flex;
-    margin: 32px 0;
+    margin: 2rem 0;
     justify-content: flex-end;
 
     li {
-      margin-left: 32px;
+      margin-left: 2rem;
     }
   }
 
@@ -19,10 +19,10 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 
     li {
-      margin-left: 32px;
+      margin-left: 2rem;
     }
   }
 }
