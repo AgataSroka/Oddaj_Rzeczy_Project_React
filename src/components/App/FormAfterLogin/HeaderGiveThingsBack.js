@@ -19,20 +19,28 @@ class HeaderGiveThingsBack extends Component {
                             <h3> Wystarczą 4 proste kroki </h3>
                             <div className='main_box_form_square'>
                                 <div className='square'>
+                                    <div className='inside'>
                                     <h4>1</h4>
                                     <p> Wybierz rzeczy </p>
+                                    </div>
                                 </div>
                                 <div className='square'>
+                                    <div className='inside'>
                                     <h4>2</h4>
                                     <p> Spakuj je w worki </p>
+                                    </div>
                                 </div>
                                 <div className='square'>
+                                    <div className='inside'>
                                     <h4>3</h4>
                                     <p> Wybierz fundację </p>
+                                    </div>
                                 </div>
                                 <div className='square'>
+                                    <div className='inside'>
                                     <h4>4</h4>
                                     <p> Zamów kuriera </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

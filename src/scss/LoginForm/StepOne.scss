@@ -1,0 +1,23 @@
+.important{
+  margin-top: 343px;
+  width: 100vw;
+  height: 120px;
+  background-color: yellow;
+  color: black;
+  .important_text{
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    h2{
+      padding-top: 40px;
+      font-weight: bolder;
+    }
+    p{
+      font-weight: bolder;
+    }
+
+
+  }
+
+}

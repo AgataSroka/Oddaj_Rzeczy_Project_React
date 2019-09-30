@@ -50,19 +50,24 @@ h2{
         transform: rotate(45deg);
         text-align: center;
         display: block;
+.inside {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 40px;
+  h4 {
+    font-size: 20px;
+    color: #3C3C3C;
+    transform: rotate(-45deg);
 
-        h4 {
-          font-size: 20px;
-          color: #3C3C3C;
-          transform: rotate(-45deg) ;
-          padding-top: 10px;
-        }
-        p{
-          transform: rotate(-45deg) ;
-          text-align: center;
-          padding-bottom: 30px;
-          padding-left: 50px;
-        }
+  }
+
+  p {
+    transform: rotate(-45deg);
+    text-align: center;
+
+  }
+}
       }
       }
     }
