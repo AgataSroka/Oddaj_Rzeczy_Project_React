@@ -8,24 +8,43 @@
     height: 100vh;
     background-image: url("../../assets/assets/Background-Form.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     .StepTwo_text{
       width: 50vw;
       height: 100vh;
       margin-left: 10%;
+      position: relative;
       h2{
         margin-top: 50px;
+        white-space: nowrap;
       }
       .options{
         display: flex;
         justify-content: space-between;
         align-content: center;
         width: 350px;
+        .options_step3{
+          display: block;
+          .select_box_step3{
+            display: block;
+          }
+
+
+        }
         .choose_option{
           display: block;
           text-align: left;
           justify-content: space-between;
           white-space: nowrap;
           line-height: 40px;
+          justify-items: center;
+          input{
+            width: 25px;
+            height: 25px;
+            border-radius: 0;
+            background-color: transparent;
+          }
+
         }
         .select_option{
           width: 200px;
@@ -41,13 +60,50 @@
     .form_buttons{
       display: flex;
       width: 270px;
+      height: 70px;
+      position: absolute;
       justify-content: space-between;
+      top: 550px;
       button{
-        margin-top: 200px;
         width: 120px;
         height: 50px;
         font-size: 16px;
       }
     }
+  }
+}
+
+.select_checkbox_step3  .checkbox_select{
+  display: none;
+}
+
+.label_step3 {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  line-height: 50px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+#small:checked ~ label[for="small"],
+#medium:checked ~ label[for="medium"],
+#large:checked ~ label[for="large"],
+#x-large:checked ~ label[for="x-large"],
+#xx-large:checked ~ label[for="xx-large"] {
+  background: yellow;
+  color: black;
+}
+.address_term {
+  display: flex;
+  flex-direction: column;
+  .address {
+    display: block;
+  }
+
+  .term {
+    display: block;
   }
 }

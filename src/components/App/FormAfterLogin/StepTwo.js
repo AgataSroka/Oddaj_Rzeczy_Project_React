@@ -54,9 +54,9 @@ class StepTwo extends Component {
                     <div className='StepTwo_photo'>
                         <div className='StepTwo_text'>
                             <h4> Krok 3/4 </h4>
-                            <div className='options'>
+                            <div className='options_step3'>
                                             <h2> Lokalizacja: </h2>
-                                                <div>
+                                                <div className='select_box_step3'>
                                                 <select className='select_option'>
                                                     <option className='select'>- wybierz -</option>
                                                     <option className='select'>Poznań</option>
@@ -67,15 +67,25 @@ class StepTwo extends Component {
                                                 </select>
                                                 </div>
                                         </div>
-                            <div>
+
+                            <div className='select_checkbox_step3'>
                                 <h2>Komu chcesz pomóc?</h2>
-                                <label><input type='checkbox'/>dzieciom</label>
-                                <label> <input type='checkbox'/>samotnym matkom</label>
-                                <label><input type='checkbox' />bezdomnym</label>
-                                <label><input type='checkbox' />niepełnosprawnym</label>
-                                <label><input type='checkbox'/>osobom starszym</label>
+                                <input type="checkbox" name="s-size" id="small" className='checkbox_select'/>
+                                <input type="checkbox" name="s-size" id="medium" className='checkbox_select'/>
+                                <input type="checkbox" name="s-size" id="large" className='checkbox_select'/>
+                                <input type="checkbox" name="s-size" id="x-large" className='checkbox_select'/>
+                                <input type="checkbox" name="s-size" id="xx-large" className='checkbox_select' />
+
+                                <label htmlFor="small" className='label_step3'>dzieciom</label>
+                                <label htmlFor="medium" className='label_step3'>samotnym matkom</label>
+                                <label htmlFor="large" className='label_step3'>bezdomnym</label>
+                                <label htmlFor="x-large" className='label_step3' >niepełnosprawnym</label>
+                                <label htmlFor="xx-large" className='label_step3' >osobom starszym</label>
                             </div>
-                            <label><input type='text'/>Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>
+                            <div style={{display: 'block', marginTop: '30px'}}>
+                            <label>Wpisz nazwę konkretnej organizacji (opcjonalnie)</label><br/>
+                                <input type='text' style={{width: '350px'}}/>
+                            </div>
                             <div className='form_buttons'>
                                 <button> Wstecz </button>
                                 <button> Dalej</button>
@@ -90,18 +100,20 @@ class StepTwo extends Component {
                             <div className='options'>
                                 <h2> Podaj adres oraz termin odbioru rzeczy przez kuriera </h2>
                             </div>
-                            <div>
+                            <div className='address_term' style={{display: 'flex', flexDirection: 'column'}}>
+                            <div className='address'>
                                 <h2>Adres odbioru</h2>
                                 <label><input type='street'/>Ulica</label>
                                 <label> <input type='value'/>Miasto</label>
                                 <label><input type='value' />Kod pocztowy</label>
                                 <label><input type='phone' />Numer telefonu</label>
                             </div>
-                            <div>
+                            <div className='term'>
                                 <h2>Termin odbioru</h2>
                                 <label><input type='date'/>Data</label>
                                 <label> <input type='time'/>Godzina</label>
                                 <label><input type='textarea' />Uwagi dla klienta</label>
+                            </div>
                             </div>
                             <div className='form_buttons'>
                                 <button> Wstecz </button>
