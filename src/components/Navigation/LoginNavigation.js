@@ -54,14 +54,10 @@ class LoginNavigation extends Component {
                 <ul className="menu">
                     <li><NavLink style={styleMenuStart}  exact
                                  to={"/"}>Start</NavLink></li>
-                    <li><Link style={styleMenu}  to='SimpleSteps' spy={true}
-                              smooth={true} duration={500}>O co chodzi?</Link></li>
-                    <li><Link style={styleMenu}  to="AboutUs" spy={true} smooth={true}
-                              duration={500}>O nas</Link></li>
-                    <li><Link style={styleMenu}  to="WhoWeHelp" spy={true} smooth={true}
-                              duration={500}>Fundacja i organizacje</Link></li>
-                    <li><Link style={styleMenu}  to="Contact" spy={true} smooth={true}
-                              duration={500}>Kontakt</Link></li>
+                    <li><NavLink style={styleMenu} exact to={'/O_co_chodzi'} >O co chodzi?</NavLink></li>
+                    <li><NavLink style={styleMenu} exact to={"/O_nas"} >O nas</NavLink></li>
+                    <li><NavLink style={styleMenu} exact to={"/Fundacje_i_organizacje"} >Fundacja i organizacje</NavLink></li>
+                    <li><NavLink style={styleMenu} exact to="/Kontakt" >Kontakt</NavLink></li>
                 </ul>
             </nav>
         )

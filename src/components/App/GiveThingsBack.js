@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import HeaderGiveThingsBack from "./FormAfterLogin/HeaderGiveThingsBack";
-import StepOne from "./FormAfterLogin/StepOne";
-import StepTwo from "./FormAfterLogin/StepTwo";
+import HeaderGiveThingsBack from '../App/FormAfterLogin/HeaderGiveThingsBack';
+import StepOne from '../App/FormAfterLogin/StepOne';
+import StepTwo from '../App/FormAfterLogin/StepTwo';
+
 
 class GiveThingsBack extends Component{
     render() {
@@ -9,7 +10,6 @@ class GiveThingsBack extends Component{
             <>
           <HeaderGiveThingsBack/>
           <StepOne/>
-          <StepTwo/>
           </>
         );
     }
