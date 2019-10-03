@@ -1,8 +1,23 @@
 import React, {Component} from 'react';
 import '../../../scss/LoginForm/StepOne.scss';
 import '../../../scss/LoginForm/StepTwo.scss';
+import StepThree from "./StepThree";
+import StepOne from "./StepOne";
 
 class StepTwo extends Component {
+    constructor() {
+        super();
+        this.state = {render: ''}
+    }
+    handleClick(button){
+        this.setState({render:button});
+    }
+    _renderButton() {
+        switch(this.state.render){
+            case 'stepOne': return <StepOne/>;
+            case 'stepThree': return <StepThree/>
+        }
+    }
     render() {
         return (
             <>
@@ -32,8 +47,9 @@ class StepTwo extends Component {
                                 </div>
                             </div>
                             <div className='form_buttons'>
-                                <button> Wstecz</button>
-                                <button> Dalej</button>
+                                <button onClick={this.handleClick.bind(this, 'stepOne')}> Wstecz</button>
+                                <button onClick={this.handleClick.bind(this, 'stepThree')}> Dalej</button>
+                                {this._renderButton()}
                             </div>
                         </div>
                     </div>

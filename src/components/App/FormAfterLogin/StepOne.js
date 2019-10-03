@@ -1,16 +1,31 @@
 import React, {Component} from 'react';
 import '../../../scss/LoginForm/StepOne.scss';
 import '../../../scss/LoginForm/StepTwo.scss';
-import StepTwo from "./2";
+import StepTwo from '../../App/FormAfterLogin/StepTwo';
+
 
 class StepOne extends Component {
+    constructor() {
+        super();
+        this.state = {render: ''}
+    }
+    handleClick(button){
+        this.setState({render:button});
+    }
+    _renderButton() {
+        switch(this.state.render){
+            case 'stepTwo': return <StepTwo/>;
+        }
+    }
+
     render() {
         return (
             <>
                 <section className='important'>
                     <div className='important_text'>
                         <h2>Ważne!</h2>
-                        <p> Uzupełnij szcegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu nalepiej je
+                        <p> Uzupełnij szcegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu nalepiej
+                            je
                             przekazać. </p>
                     </div>
                 </section>
@@ -21,7 +36,8 @@ class StepOne extends Component {
                             <h2> Zaznacz co chcesz oddać: </h2>
                             <div className='options'>
                                 <div className='choose_option'>
-                                    <label><input type='checkbox'/>ubrania, które nadają się do ponownego użycia</label><br/>
+                                    <label><input type='checkbox'/>ubrania, które nadają się do ponownego
+                                        użycia</label><br/>
                                     <label> <input type='checkbox'/>ubrania do wyrzucenia</label><br/>
                                     <label><input type='checkbox'/>zabawki</label><br/>
                                     <label><input type='checkbox'/>książki</label><br/>
@@ -29,7 +45,8 @@ class StepOne extends Component {
                                 </div>
                             </div>
                             <div className='form_buttons'>
-                                <button onClick={<StepTwo/>}> Dalej</button>
+                                <button onClick={this.handleClick.bind(this, 'stepTwo')}> Dalej</button>
+                                {this._renderButton()}
                             </div>
                         </div>
                     </div>
@@ -37,6 +54,7 @@ class StepOne extends Component {
             </>
         )
     }
+
 }
 
 export default StepOne;
