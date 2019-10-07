@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import HeaderGiveThingsBack from '../App/FormAfterLogin/HeaderGiveThingsBack';
-import StepOne from '../App/FormAfterLogin/StepOne';
+import Steps from './FormAfterLogin/Steps';
+import Contact from "../Home/Contact/Contact";
 
 
 
@@ -9,7 +10,8 @@ class GiveThingsBack extends Component{
         return (
             <>
           <HeaderGiveThingsBack/>
-          <StepOne/>
+          <Steps/>
+          <Contact/>
           </>
         );
     }

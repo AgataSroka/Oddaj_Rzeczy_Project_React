@@ -88,11 +88,11 @@
   justify-content: space-between;
 }
 
-#small:checked ~ label[for="small"],
-#medium:checked ~ label[for="medium"],
-#large:checked ~ label[for="large"],
-#x-large:checked ~ label[for="x-large"],
-#xx-large:checked ~ label[for="xx-large"] {
+#one:checked ~ label[for="one"],
+#two:checked ~ label[for="two"],
+#three:checked ~ label[for="three"],
+#four:checked ~ label[for="four"],
+#five:checked ~ label[for="five"] {
   background: yellow;
   color: black;
 }

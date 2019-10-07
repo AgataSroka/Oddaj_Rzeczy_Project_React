@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../../scss/LoginForm/StepTwo.scss'
+import '../../../scss/LoginForm/Steps_Two.scss'
 
 class StepTwo2 extends Component {
     render() {

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import '../../../scss/LoginForm/StepOne.scss';
-import '../../../scss/LoginForm/StepTwo.scss';
+import '../../../scss/LoginForm/Steps_One.scss';
+import '../../../scss/LoginForm/Steps_Two.scss';
 
 
-class StepOne extends Component {
+class Steps extends Component {
     state = {
         valueOfInput: null,
         stepOne: true,
@@ -16,13 +16,16 @@ class StepOne extends Component {
     handleOnClick = e => {
         this.setState({valueOfInput: e.target.value});
     };
-    // handleButtonPrev = () =>{
-    //     this.setState()
-    // }
-    handleButtonNext = () =>{
+    handleButtonPrev = () => {
+        this.setState({stepOne: true});
+        console.log('prevStep');
+        this.setState({counter: this.state.counter - 1});
+    };
+    handleButtonNext = () => {
         this.setState({stepTwo: true});
-        console.log('stepTwo');
-        this.setState({counter: this.setState.counter+1 });
+        console.log('nextStep');
+        this.setState({counter: this.state.counter + 1});
+        console.log(this.state.counter);
 
     };
 
@@ -46,13 +49,14 @@ class StepOne extends Component {
                         <h2> Zaznacz co chcesz oddać: </h2>
                         <div className='options'>
                             <div className='choose_option'>
-                                <label><input type='checkbox' onClick={this.handleOnClick}/>ubrania, które nadają się do ponownego
+                                <label><input type='checkbox' onClick={this.handleOnClick}/>ubrania, które nadają się do
+                                    ponownego
                                     użycia</label><br/>
                                 <label> <input type='checkbox' onClick={this.handleOnClick}/>ubrania do
                                     wyrzucenia</label><br/>
                                 <label><input type='checkbox' onClick={this.handleOnClick}/>zabawki</label><br/>
-                                <label><input type='checkbox' onClick={this.handleOnClick} />książki</label><br/>
-                                <label><input type='checkbox' onClick={this.handleOnClick} />inne</label>
+                                <label><input type='checkbox' onClick={this.handleOnClick}/>książki</label><br/>
+                                <label><input type='checkbox' onClick={this.handleOnClick}/>inne</label>
                             </div>
                         </div>
                         <div className='form_buttons'>
@@ -89,8 +93,8 @@ class StepOne extends Component {
                             </div>
                         </div>
                         <div className='form_buttons'>
-                            <button> Wstecz</button>
-                            <button> Dalej</button>
+                            <button onClick={this.handleButtonPrev}> Wstecz</button>
+                            <button onClick={this.handleButtonNext}> Dalej</button>
                         </div>
                     </div>
                 </div>
@@ -125,25 +129,25 @@ class StepOne extends Component {
 
                         <div className='select_checkbox_step3'>
                             <h2>Komu chcesz pomóc?</h2>
-                            <input type="checkbox" name="1" id="small" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="medium" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="large" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="x-large" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="xx-large" className='checkbox_select'/>
+                            <input type="checkbox" name="1" id="one" className='checkbox_select'/>
+                            <input type="checkbox" name="s-size" id="two" className='checkbox_select'/>
+                            <input type="checkbox" name="s-size" id="three" className='checkbox_select'/>
+                            <input type="checkbox" name="s-size" id="four" className='checkbox_select'/>
+                            <input type="checkbox" name="s-size" id="five" className='checkbox_select'/>
 
-                            <label htmlFor="small" className='label_step3'>dzieciom</label>
-                            <label htmlFor="medium" className='label_step3'>samotnym matkom</label>
-                            <label htmlFor="large" className='label_step3'>bezdomnym</label>
-                            <label htmlFor="x-large" className='label_step3'>niepełnosprawnym</label>
-                            <label htmlFor="xx-large" className='label_step3'>osobom starszym</label>
+                            <label htmlFor="one" className='label_step3'>dzieciom</label>
+                            <label htmlFor="two" className='label_step3'>samotnym matkom</label>
+                            <label htmlFor="three" className='label_step3'>bezdomnym</label>
+                            <label htmlFor="four" className='label_step3'>niepełnosprawnym</label>
+                            <label htmlFor="five" className='label_step3'>osobom starszym</label>
                         </div>
                         <div style={{display: 'block', marginTop: '30px'}}>
                             <label>Wpisz nazwę konkretnej organizacji (opcjonalnie)</label><br/>
                             <input type='text' style={{width: '350px'}}/>
                         </div>
                         <div className='form_buttons'>
-                            <button> Wstecz</button>
-                            <button> Dalej</button>
+                            <button onClick={this.handleButtonPrev}> Wstecz</button>
+                            <button onClick={this.handleButtonNext}> Dalej</button>
                         </div>
                     </div>
                 </div>
@@ -179,15 +183,15 @@ class StepOne extends Component {
                             </div>
                         </div>
                         <div className='form_buttons'>
-                            <button> Wstecz</button>
-                            <button> Dalej</button>
+                            <button onClick={this.handleButtonPrev}> Wstecz</button>
+                            <button onClick={this.handleButtonNext}> Dalej</button>
                         </div>
                     </div>
                 </div>
             </section>
         </>;
 
-        return stepOne
+
         if (counter === 2 && valueOfInput !== null) {
             return stepTwo
         } else if (counter === 3 && valueOfInput !== null) {
@@ -202,4 +206,4 @@ class StepOne extends Component {
 
 }
 
-export default StepOne;
+export default Steps;
