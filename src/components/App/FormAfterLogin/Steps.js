@@ -6,6 +6,7 @@ import '../../../scss/LoginForm/Steps_Two.scss';
 class Steps extends Component {
     state = {
         valueOfInput: null,
+        valueOfSelect: null,
         stepOne: true,
         stepTwo: false,
         stepThree: false,
@@ -15,6 +16,7 @@ class Steps extends Component {
     };
     handleOnClick = e => {
         this.setState({valueOfInput: e.target.value});
+        this.setState({valueOfSelect: e.target.value});
     };
     handleButtonPrev = () => {
         this.setState({stepOne: true});
@@ -49,14 +51,14 @@ class Steps extends Component {
                         <h2> Zaznacz co chcesz oddać: </h2>
                         <div className='options'>
                             <div className='choose_option'>
-                                <label><input type='checkbox' onClick={this.handleOnClick}/>ubrania, które nadają się do
+                                <label><input type='checkbox' value={'ubrania, które nadają się do ponownego użycia'} onClick={this.handleOnClick}/>ubrania, które nadają się do
                                     ponownego
                                     użycia</label><br/>
-                                <label> <input type='checkbox' onClick={this.handleOnClick}/>ubrania do
+                                <label> <input type='checkbox' value={'ubrania do wyrzucenia'} onClick={this.handleOnClick}/>ubrania do
                                     wyrzucenia</label><br/>
-                                <label><input type='checkbox' onClick={this.handleOnClick}/>zabawki</label><br/>
-                                <label><input type='checkbox' onClick={this.handleOnClick}/>książki</label><br/>
-                                <label><input type='checkbox' onClick={this.handleOnClick}/>inne</label>
+                                <label><input type='checkbox' value={'zabawki'} onClick={this.handleOnClick}/>zabawki</label><br/>
+                                <label><input type='checkbox' value={'książki'} onClick={this.handleOnClick}/>książki</label><br/>
+                                <label><input type='checkbox' value={'inne'} onClick={this.handleOnClick}/>inne</label>
                             </div>
                         </div>
                         <div className='form_buttons'>
@@ -82,8 +84,8 @@ class Steps extends Component {
                         <div className='options'>
                             <p> Liczba 60l worków: </p>
                             <div>
-                                <select className='select_option'>
-                                    <option className='select' value=''>- wybierz -</option>
+                                <select className='select_option' onClick={this.handleOnClick}>
+                                    <option className='select'>- wybierz -</option>
                                     <option className='select'>1</option>
                                     <option className='select'>2</option>
                                     <option className='select'>3</option>
@@ -116,7 +118,7 @@ class Steps extends Component {
                         <div className='options_step3'>
                             <h2> Lokalizacja: </h2>
                             <div className='select_box_step3'>
-                                <select className='select_option'>
+                                <select className='select_option' onClick={this.handleOnClick}>
                                     <option className='select'>- wybierz -</option>
                                     <option className='select'>Poznań</option>
                                     <option className='select'>Warszawa</option>
@@ -129,11 +131,11 @@ class Steps extends Component {
 
                         <div className='select_checkbox_step3'>
                             <h2>Komu chcesz pomóc?</h2>
-                            <input type="checkbox" name="1" id="one" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="two" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="three" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="four" className='checkbox_select'/>
-                            <input type="checkbox" name="s-size" id="five" className='checkbox_select'/>
+                            <input type="radio" name="1" id="one" className='checkbox_select' value={'dzieciom'} onClick={this.handleOnClick}/>
+                            <input type="radio" name="1" id="two" className='checkbox_select' value={'samotnym matkom'} onClick={this.handleOnClick}/>
+                            <input type="radio" name="1" id="three" className='checkbox_select' value={'bezdomnym'} onClick={this.handleOnClick}/>
+                            <input type="radio" name="1" id="four" className='checkbox_select' value={'niepełnosprawnym'} onClick={this.handleOnClick}/>
+                            <input type="radio" name="1" id="five" className='checkbox_select' value={'osobom starszym'} onClick={this.handleOnClick} />
 
                             <label htmlFor="one" className='label_step3'>dzieciom</label>
                             <label htmlFor="two" className='label_step3'>samotnym matkom</label>
@@ -167,19 +169,29 @@ class Steps extends Component {
                         <div className='options'>
                             <h2> Podaj adres oraz termin odbioru rzeczy przez kuriera </h2>
                         </div>
-                        <div className='address_term' style={{display: 'flex', flexDirection: 'column'}}>
+                        <div className='address_term' >
                             <div className='address'>
                                 <h2>Adres odbioru</h2>
-                                <label><input type='street'/>Ulica</label>
-                                <label> <input type='value'/>Miasto</label>
-                                <label><input type='value'/>Kod pocztowy</label>
-                                <label><input type='phone'/>Numer telefonu</label>
+                                <div className='address_box1'>
+                                <label>Ulica</label>
+                                <label> <input type='value' onClick={this.handleOnClick}/>Miasto</label>
+                                    <input type='street' onClick={this.handleOnClick}/>
+                                <label>Kod pocztowy</label>
+                                    <input type='value' onClick={this.handleOnClick}/>
+                                <label>Numer telefonu</label>
+                                    <input type='phone' onClick={this.handleOnClick} />
+                                </div>
                             </div>
                             <div className='term'>
                                 <h2>Termin odbioru</h2>
-                                <label><input type='date'/>Data</label>
-                                <label> <input type='time'/>Godzina</label>
-                                <label><input type='textarea'/>Uwagi dla klienta</label>
+                                <div className='term_box1'>
+                                <label>Data</label>
+                                    <input type='date'/>
+                                <label>Godzina</label>
+                                    <input type='time'/>
+                                <label>Uwagi dla klienta</label>
+                                    <input type='textarea'/>
+                                </div>
                             </div>
                         </div>
                         <div className='form_buttons'>

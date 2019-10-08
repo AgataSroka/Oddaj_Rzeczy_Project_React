@@ -3,6 +3,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  white-space: nowrap;
 
   .login {
     list-style-type: none;

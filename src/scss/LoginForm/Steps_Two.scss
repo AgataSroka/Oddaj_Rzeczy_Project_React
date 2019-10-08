@@ -98,12 +98,30 @@
 }
 .address_term {
   display: flex;
-  flex-direction: column;
+  width: 40vw;
+  height: 300px;
+  justify-content: space-between;
   .address {
-    display: block;
+    width: 200px;
+    .address_box1 {
+       display: block;
+       line-height: 30px;
+      input{
+        width: 200px;
+        height: 30px;
+      }
+    }
   }
-
   .term {
-    display: block;
+    width: 200px;
+    margin-top: 3px;
+    .term_box1{
+      display: block;
+      line-height: 30px;
+      input{
+        width: 200px;
+        height: 30px;
+      }
+    }
   }
 }
